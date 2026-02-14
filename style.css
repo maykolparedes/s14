@@ -1,0 +1,90 @@
+:root {
+    --pink-bg: #f3e9dc;
+    --heart-red: #ff3b6f;
+    --trunk-brown: #5d4037;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #ff6b9d, #c22e5c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    background-color: var(--pink-bg);
+    width: 650px;
+    height: 500px;
+    border-radius: 60px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Inicial */
+.logo-container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-svg {
+    width: 400px;
+    height: 200px;
+}
+
+.text-label {
+    position: absolute;
+    right: 90px;
+    bottom: 55px;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--heart-red);
+    pointer-events: none;
+}
+
+/* Mensaje Final */
+.love-message {
+    position: absolute;
+    bottom: 40px;
+    font-size: 24px;
+    color: var(--heart-red);
+    font-weight: bold;
+    opacity: 0;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Árbol */
+#tree-svg {
+    width: 450px;
+    height: 450px;
+}
+
+/* Partículas de fondo */
+.bg-hearts {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+}
